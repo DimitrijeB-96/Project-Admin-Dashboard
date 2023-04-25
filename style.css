@@ -13,6 +13,10 @@
     --darkerslate-color: #64748b;
 }
 
+body {
+    overflow: hidden;
+}
+
 * {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -275,11 +279,14 @@
     display: grid;
 }
 
+/* Adjust */
 .announcements-section {
     margin: 0 auto;
     width: 80%;
-    padding: 12px;
+    padding: 10px 12px;
     border-bottom: 1px solid var(--darkerslate-color);
+
+    align-self: baseline;
 }
 
 .announcements-section:last-of-type {
