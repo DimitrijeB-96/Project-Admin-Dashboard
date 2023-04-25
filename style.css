@@ -281,11 +281,10 @@ a {
 
 .container-content > p {
     grid-area: discription;
-    margin-top: 6px;
     font-family: "Rubik", Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: var(--darkerslate-color);
-
+    padding: 5px;
     
 }
 
@@ -334,7 +333,7 @@ a {
 .side > h2:last-of-type {
     position: absolute;
     left: 14px;
-    top: 400px;
+    top: 424px;
 }
 
 .about-container {
