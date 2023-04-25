@@ -6,31 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
+
 <body>
     <div class="layout-grid">
         <div class="header">
             <div class="search-section">
                 <form class="search-form">
-                    <label for="search">X</label>
+                    <label for="search"><i class="bi bi-search"></i></label> <!-- search icon -->
                     <input type="text" id="search" name="search">
                 </form>
                 <div class="display-user-small">
-                    <p>X</p><!-- bell icon -->
-                    <p>X</p><!-- avatar picture -->
-                    <h2 class="user-fullname">Morgan Oakley</h2>
+                    
+                    <i class="bi bi-bell"></i> <!-- bell icon -->
+                    <img src="images/my-logo.jpg" alt="my logo" class="small-avatar"><!-- avatar picture -->
+                    <h2 class="user-fullname">Dimitrije Backalic</h2>
                 </div>
             </div>
             <div class="user-info-section">
                 <div class="display-user">
                     <div class="main-avatar">
-                        <p>X</p><!-- main avatar picture -->
+                        <img src="images/my-logo.jpg" alt="my logo" class="my-avatar"><!-- main avatar picture -->
                     </div>
                     <div class="hello-user">
                         <p>Hi there,</p>
                     </div>
                     <div class="main-username">
-                        <h2 class="user-fullname">Morgan Oakley (@morgan)</h2>
+                        <h2 class="user-fullname">Dimitrije Backalic (<a href="https://github.com/DimitrijeB-96" target="_blank">@DimitrijeB-96</a>)</h2>
                     </div>
                 </div>
                 <div class="buttons-section">
@@ -44,167 +47,183 @@
         <div class="sidebar">
             <!-- section one, dashboard and icon -->
             <div class="section-one">
-                <p>X</p><!-- icon -->
+                <i class="bi bi-columns-gap"></i><!-- dashboard icon -->
                 <h1>Dashboard</h1>
             </div>
+            
             <!-- section two, home, profile, message... -->
             <div class="section-two">
-                <p>X</p><!-- icon home -->
+                <i class="bi bi-house"></i><!-- icon home -->
                 <h2>Home</h2>
 
-                <p>X</p><!-- icon profile -->
+                <i class="bi bi-person-lines-fill"></i><!-- icon profile -->
                 <h2>Profile</h2>
 
-                <p>X</p><!-- icon message -->
+                <i class="bi bi-chat-left-text"></i><!-- icon message -->
                 <h2>Messages</h2>
 
-                <p>X</p><!-- icon history -->
+                <i class="bi bi-clock-history"></i><!-- icon history -->
                 <h2>History</h2>
 
-                <p>X</p><!-- icon tasks -->
+                <i class="bi bi-card-checklist"></i><!-- icon tasks -->
                 <h2>Tasks</h2>
 
-                <p>X</p><!-- icon community -->
+                <i class="bi bi-people-fill"></i><!-- icon community -->
                 <h2>Communities</h2>
             </div>
+
             <!-- section three, settings, support, privacy -->
             <div class="section-three">
-                <p>X</p><!-- icon settings -->
+                <i class="bi bi-gear-fill"></i><!-- icon settings -->
                 <h2>Settings</h2>
 
-                <p>X</p><!-- icon support -->
+                <i class="bi bi-question-square"></i><!-- icon support -->
                 <h2>Support</h2>
 
-                <p>X</p><!-- icon privacy -->
+                <i class="bi bi-shield-check"></i><!-- icon privacy -->
                 <h2>Privacy</h2>
             </div>
         </div>
 
         <div class="main-content">
             <div class="main">
-                <h2>Your Projects</h2>
+                <h2>My Odin Projects</h2>
                 <div class="container">
-                    <h2>Super Cool Project</h2>
-                    <p>Sed tempus ut lacus ut scelerisque.
-                        Suspendisse sollicitudin nibh erat, id
-                        facilisis felis accumsan nec.
-                    </p>
-                    <div class="container-icons">
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                    </div>
+                    <a class="container-content" href="https://github.com/DimitrijeB-96/odin-recipes" target="_blank">
+                        <h2>First project: Recipes</h2>
+                        <p>This was introduction project. 
+                            So far I have learned how to use Linux operating system, how to use Git and GitHub and basics in HTML with
+                        </p>
+                        <div class="container-icons">
+                            <i class="bi bi-star"></i><!-- star icon -->
+                            <i class="bi bi-eye"></i><!-- eye icon -->
+                            <i class="bi bi-share"></i><!-- share icon -->
+                        </div>
+                    </a>
                 </div>
                 <div class="container">
-                    <h2>Less Cool Project</h2>
-                    <p>Nullam condimentum ipsum ut lectus vehicula
-                        consectetur. Quisque sed dolor tincidunt,
-                        consectetur sapien et, facilisis dolor. Duis sem
-                        purus, dignissim ut sapien in, varius pellentesque lacus.
-                    </p>
-                    <div class="container-icons">
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                    </div>
+                    <a class="container-content" href="https://github.com/DimitrijeB-96/Landing-Page" target="_blank">
+                        <h2>Second project: Landing Page</h2>
+                        <p>Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.
+                        </p>
+                        <div class="container-icons">
+                            <i class="bi bi-star"></i><!-- star icon -->
+                            <i class="bi bi-eye"></i><!-- eye icon -->
+                            <i class="bi bi-share"></i><!-- share icon -->
+                        </div>
+                    </a>
                 </div>
                 <div class="container">
-                    <h2>Impossible App</h2>
-                    <p>In hac habitasse platea dictumst. Vivamus
-                        dictum rutrum arcu, a placerat velit sagittis
-                        id.
-                    </p>
-                    <div class="container-icons">
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                    </div>
+                    <a class="container-content" href="https://github.com/DimitrijeB-96/Project-Rock-Paper-Scissors" target="_blank">
+                        <h2>Third project: Rock Paper Scissors</h2>
+                        <p>Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.
+                        </p>
+                        <div class="container-icons">
+                            <i class="bi bi-star"></i><!-- star icon -->
+                            <i class="bi bi-eye"></i><!-- eye icon -->
+                            <i class="bi bi-share"></i><!-- share icon -->
+                        </div>
+                    </a>
                 </div>
                 <div class="container">
-                    <h2>Easy Peasy App</h2>
-                    <p>Etiam cursus eros ac efficitur fringilla.
-                        Vestibulum dignissim urna eget accumsanaliquam. Curabitur dignissim niti in tortor
-                        commodo, ac bibendum magna tincidunt.
-                    </p>
-                    <div class="container-icons">
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                    </div>
+                    <a class="container-content" href="https://github.com/DimitrijeB-96/Project-Etch-a-Sketch" target="_blank">
+                        <h2>Fourth project: Etch-a-Sketch</h2>
+                        <p>Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.
+                        </p>
+                        <div class="container-icons">
+                            <i class="bi bi-star"></i><!-- star icon -->
+                            <i class="bi bi-eye"></i><!-- eye icon -->
+                            <i class="bi bi-share"></i><!-- share icon -->
+                        </div>
+                    </a>
                 </div>
                 <div class="container">
-                    <h2>Ad Blocker</h2>
-                    <p>Quisque eget tutrum nisl. Nam augue 
-                        justo, cursus vitae metus vel, pharetra
-                        hendrerit felis. Aliquam sed malesuada eros.
-                    </p>
-                    <div class="container-icons">
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                    </div>
+                    <a class="container-content" href="https://github.com/DimitrijeB-96/Project-Calculator" target="_blank">
+                        <h2>Fifth project: Calculator</h2>
+                        <p>Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.
+                        </p>
+                        <div class="container-icons">
+                            <i class="bi bi-star"></i><!-- star icon -->
+                            <i class="bi bi-eye"></i><!-- eye icon -->
+                            <i class="bi bi-share"></i><!-- share icon -->
+                        </div>
+                    </a>
                 </div>
                 <div class="container">
-                    <h2>Money Maker</h2>
-                    <p>Praesent convallis, libero quis congue
-                        elementum, nunc ante faucibus sapien, ac 
-                        scelerisque tortor purus sit amet ex.
-                        Pellentesque mollis nec sem vel aliquam
-                    </p>
-                    <div class="container-icons">
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                        <p>X</p><!-- icon -->
-                    </div>
+                    <a class="container-content" href="https://github.com/DimitrijeB-96/Project-Sign-Up-form" target="_blank">
+                        <h2>The Sixth project: Sign-up Form</h2>
+                        <p>Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.
+                        </p>
+                        <div class="container-icons">
+                            <i class="bi bi-star"></i><!-- star icon -->
+                            <i class="bi bi-eye"></i><!-- eye icon -->
+                            <i class="bi bi-share"></i><!-- share icon -->
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="side">
-                <h2>Announcements</h2>
-                <div class="announcements-container">
-                    <div class="announcements-section">
-                        <h3>Site Maintenance</h3>
-                        <p>Vestibulum condimentum tellus lacus,
-                            in accumsan elit maximus ac. Donec
-                            hendreit sodales congue...
+                <h2>About</h2>
+                <div class="about-container">
+                    <div class="about-section">
+                        <h3>This project</h3>
+                        <p>Main focus of this project is to use display Grid.
+                            In addition I've added links to my Github Odin's previous projects.
+                            Dashboard has styling but only works as dummy content.
                         </p>
                     </div>
-                    <div class="announcements-section">
-                        <h3>Community Share Day</h3>
-                        <p>Nam vel lectus tincidunt, rutrum Nullam
-                            en, ornare libero. Aliquam dictum
-                            accumsan porttitor...
+                    <div class="about-section">
+                        <h3>Reference</h3>
+                        <p>In visit section are links to Bootstrap and Tailwind that I use for additional styling. You can check reference picture for this project
+                            <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/43cc6ab69fdfbef40d431a65677d2144668930ac/intermediate_html_css/grid/project_admin_dashboard/imgs/dashboard-project.png" target="_blank">
+                                here</a>.     
                         </p>
                     </div>
-                    <div class="announcements-section">
-                        <h3>Updated Privacy Policy</h3>
-                        <p>
-                            Phasellus efficitur nisi eget elit
-                            consectetur, eget condimentum ante
-                            auctor. Cras fringilla sagittis sem in mattis...
+                    <div class="about-section">
+                        <h3>Styling</h3>
+                        <p>Most of this page has some basic hover effect, try it out :) .
                         </p>
                     </div>
                 </div>
-                <h2>Trending</h2>
-                <div class="trending-container">
-                    <div class="trending-section">
-                        <p class="trending-avatar">X</p><!-- avatar -->
-                        <p class="trending-tag">@tegan</p>
-                        <p class="trending-fullname">World Peace Builder</p>
+                <h2>Visit</h2>
+                <div class="visit-container">
+                    <div>
+                        <a class="visit-section" href="https://theodinproject.com/" target="_blank">
+                            <img alt="Odin-logo" class="visit-avatar" src="images/odin-logo.png"> <!-- avatar -->
+                            <p class="visit-tag">@TheOdinProject</p>
+                            <p class="visit-fullname">The Odin Project</p>
+                        </a>
                     </div>
-                    <div class="trending-section">
-                        <p class="trending-avatar">X</p><!-- avatar -->
-                        <p class="trending-tag">@morgan</p>
-                        <p class="trending-fullname">Super Cool Project</p>
+                    <div>
+                        <a class="visit-section" href="https://github.com/" target="_blank">
+                            <img alt="Github-logo" class="visit-avatar" src="images/github-logo.png"><!-- avatar -->
+                            <p class="visit-tag">@github</p>
+                            <p class="visit-fullname">Github</p>
+                        </a>
                     </div>
-                    <div class="trending-section">
-                        <p class="trending-avatar">X</p><!-- avatar -->
-                        <p class="trending-tag">@kendall<p>
-                        <p class="trending-fullname">Life Changing App</p>
+                    <div>
+                        <a class="visit-section" href="https://getbootstrap.com/" target="_blank">
+                            <img alt="Bootstrap-logo" class="visit-avatar" src="images/bootstrap-logo.png"><!-- avatar -->
+                            <p class="visit-tag">@getbootstrap<p>
+                            <p class="visit-fullname">Bootstrap</p>
+                        </a>
                     </div>
-                    <div class="trending-section">
-                        <p class="trending-avatar">X</p><!-- avatar -->
-                        <p class="trending-tag">@alex</p>
-                        <p class="trending-fullname">No Traffic Maker</p>
+                    <div>
+                        <a class="visit-section" href="https://tailwindcss.com/" target="_blank">
+                            <img alt="Tailwind-logo" class="visit-avatar" src="images/tailwindcss-logo.png"><!-- avatar -->
+                            <p class="visit-tag">@tailwindcss</p>
+                            <p class="visit-fullname">Tailwind</p>
+                        </a>
                     </div>
                 </div>
             </div>
