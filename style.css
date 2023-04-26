@@ -28,8 +28,8 @@ body {
 .layout-grid {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar content";
@@ -43,10 +43,9 @@ a {
 .header {
     color: var(--dark-color);
     grid-area: header;
-    border: 2px solid var(--slatewhite-color);
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
 
 .user-fullname {
@@ -75,7 +74,6 @@ a {
     font-size: 1em;
     color: var(--dark-color);
     font-weight: 500;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
 
     outline: none;
 }
@@ -240,8 +238,9 @@ a {
 
 .main {
     grid-area: main;
-    padding: 60px 30px;
+    padding: 40px 25px;
     padding-right: 15px;
+    padding-bottom: 60px;
     position: relative;
 
     display: grid;
@@ -253,7 +252,7 @@ a {
 .main > h2 {
     position: absolute;
     left: 30px;
-    top: 24px;
+    top: 6px;
 }
 
 .container {
@@ -306,8 +305,9 @@ a {
     color: var(--dark-color);
 
     grid-area: side;
-    padding: 60px 30px;
+    padding: 40px 25px;
     padding-left: 15px;
+    padding-bottom: 60px;
     margin-right: 20px;
     position: relative;
 
@@ -327,13 +327,13 @@ a {
 .side > h2:first-child {
     position: absolute;
     left: 14px;
-    top: 24px;
+    top: 6px;
 }
 
 .side > h2:last-of-type {
     position: absolute;
     left: 14px;
-    top: 424px;
+    top: 406px;
 }
 
 .about-container {
